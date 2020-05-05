@@ -1,0 +1,80 @@
+.App {
+  text-align: center;
+}
+
+div.container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.gallery-container {
+  display: flex;
+  /* border: 1px solid black; */
+  justify-content: space-evenly;
+  /* justify-content: center; */
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+  margin: 6px;
+  width: 30%;
+  /* width: 200px; */
+}
+
+div.video-player {
+  border: 1px solid #ccc;
+  width: 50%;
+  height: auto;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@media only screen and (max-width: 700px) {
+  div.gallery {
+    width: 49.5%;
+  }
+
+  .gallery-container {
+    width: 90%;
+  }
+
+  div.video-player {
+    width: 90%;
+  }
+
+  div.container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  div.gallery {
+    width: 100%;
+  }
+}
