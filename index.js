@@ -9,9 +9,9 @@ const path = require('path')
 const app = express();
 
 cloudinary.config({
-  cloud_name: 'fisayo',
-  api_key: '828356387699514',
-  api_secret: "tmFF-NwEARXJiNj9-0evtomDMGg"
+  cloud_name: process.env.CLOUD_NAME,
+  api_key: process.env.API_KEY,
+  api_secret: process.env.API_SECRET
 })
 
 app.use(cors());
