@@ -94,8 +94,12 @@ const AppContextProvider = ({ children }) => {
   //   setSelectedVideo(video)
   // }
 
+  const setStateName = (name) => {
+    setName(name);
+  }
+
   return (
-    <AppContext.Provider value={{ name, responseGoogle, videos }}>
+    <AppContext.Provider value={{ name, responseGoogle, videos, setStateName }}>
       {children}
     </AppContext.Provider>
   );

@@ -1,0 +1,33 @@
+.center {
+  text-align: center;
+}
+
+.btn:focus,.btn:active {
+  outline: none !important;
+  box-shadow: none;
+}
+
+.btn:focus {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.checkbox {
+  min-width: 16px;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border: solid 2px #eee;
+  margin-right: 5px;
+  border-radius: 0;
+  color: red;
+  /* margin: 5px auto; */
+  /* display: inline-block; */
+}
+
+.checkbox-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7px;
+}
