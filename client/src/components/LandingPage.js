@@ -49,7 +49,7 @@ const LandingPage = () => {
 
   return (
     <div className="container">
-      {console.log("HOME")}
+      {/* {console.log("HOME")} */}
       <h1 style={{textAlign: 'center', fontWeight: 'bold', marginTop: '50px'}}>Welcome</h1>
       {/* <h3>Login with Google</h3>
       <GoogleLogin

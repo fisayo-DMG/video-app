@@ -80,13 +80,13 @@ const AppContextProvider = ({ children }) => {
   const [videos, setVideos] = useState(videoArray);
   // const [selectedVideo, setSelectedVideo] = useState('');
 
-  useEffect(() => {
-    console.log("APP CONTEXT");
-    // console.log('SELECTED VIDEO', selectedVideo)
-  }, []);
+  // useEffect(() => {
+  //   console.log("APP CONTEXT");
+  //   // console.log('SELECTED VIDEO', selectedVideo)
+  // }, []);
 
   const responseGoogle = (response) => {
-    console.log(response);
+    // console.log(response);
     if (responseGoogle) {
       setName(response.profileObj.name);
     }

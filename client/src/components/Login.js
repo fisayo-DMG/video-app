@@ -10,7 +10,7 @@ const Login = () => {
   const { name, setStateName } = useContext(AppContext);
 
   const responseGoogle = (response) => {
-    console.log(response);
+    // console.log(response);
     if (responseGoogle) {
       setStateName(response.profileObj.name);
     }
