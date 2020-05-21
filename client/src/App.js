@@ -18,8 +18,8 @@ function App() {
         <AppNavbar />
         <Switch>
           <Route exact path="/" component={(props) => <LandingPage />} />
-          <Route exact path="/tutor" component={(props) => <Tutor />} />
-          <Route exact path="/home" component={(props) => <Home />} />
+          {/* <Route exact path="/tutor" component={(props) => <Tutor />} /> */}
+          {/* <Route exact path="/home" component={(props) => <Home />} /> */}
           {/* <Route exact path="/detail" render={(props) => <VideoDetail {...props} />} /> */}
           <Route exact path="/detail">
             <VideoDetail />

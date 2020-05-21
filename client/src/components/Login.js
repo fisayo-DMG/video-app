@@ -34,7 +34,6 @@ const Login = () => {
         <ModalHeader toggle={toggle}>Login</ModalHeader>
         <ModalBody className="center">
           <GoogleLogin
-            onClick={() => console.log("click")}
             clientId={CLIENT_ID}
             onSuccess={responseGoogle}
             onFailure={responseGoogle}

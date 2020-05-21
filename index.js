@@ -26,7 +26,7 @@ app.post('/upload', async (req, res) => {
 
   try {
     const result = await cloudinary.uploader.upload(req.files.stuff.path);
-    console.log(result.secure_url);
+    console.log('Successful', result.secure_url);
     
   } catch (error) {
     console.log(error)

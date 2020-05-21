@@ -1,14 +1,16 @@
 import React, { useState, useContext } from "react";
 import GoogleLogin from "react-google-login";
 import { AppContext } from "../appContext";
-import { NavLink, Button, Modal, ModalHeader, ModalBody, Input } from "reactstrap";
+import { NavLink, Button, Modal, ModalHeader, ModalBody, Input, L } from "reactstrap";
 
 
 const Register = () => {
   const CLIENT_ID =
   "708483733729-napcqivj73qrqm83b2akhu3dmq26h9bj.apps.googleusercontent.com";
 
-const { name, setStateName } = useContext(AppContext);
+  // const [teacherStatus, setTeacherStatus] = useState(false)
+
+const { name, setStateName, setTeacherStatus, teacherStatus } = useContext(AppContext);
 
 const responseGoogle = (response) => {
   console.log(response);
@@ -20,7 +22,7 @@ const responseGoogle = (response) => {
 
 
   const [modal, setModal] = useState(false);
-  const [teacherStatus, setTeacherStatus] = useState(false);
+  // const [teacherStatus, setTeacherStatus] = useState(false);
 
   const toggle = () => {
     setModal((state) => !state);
@@ -46,9 +48,10 @@ const responseGoogle = (response) => {
 
           <div className='checkbox-wrapper'>
             {/* <div className='checkbox'></div> */}
+           
             <input onChange={() => {
               setTeacherStatus((status) => !status)
-            }} checked={teacherStatus} className='checkbox' type='checkbox' style={{marginRight: '5px'}}/> <span>I'm a Teacher</span>
+            }} checked={teacherStatus} className='checkbox' id='checkbox' type='checkbox' style={{marginRight: '5px'}}/> <label htmlFor="checkbox" style={{marginBottom: '2px'}}>I'm a Teacher</label>
             </div>
         </ModalBody>
       </Modal>

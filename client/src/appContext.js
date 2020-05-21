@@ -75,6 +75,8 @@ const AppContextProvider = ({ children }) => {
     },
   ];
   const [name, setName] = useState("");
+  const [teacherStatus, setTeacherStatus] = useState(false);
+  const [addButton, setAddButton] = useState(false);
   const [videos, setVideos] = useState(videoArray);
   // const [selectedVideo, setSelectedVideo] = useState('');
 
@@ -99,7 +101,7 @@ const AppContextProvider = ({ children }) => {
   }
 
   return (
-    <AppContext.Provider value={{ name, responseGoogle, videos, setStateName }}>
+    <AppContext.Provider value={{ name, responseGoogle, videos, setStateName, teacherStatus, setTeacherStatus, addButton, setAddButton }}>
       {children}
     </AppContext.Provider>
   );
